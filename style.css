@@ -1,0 +1,800 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Navbar Start */
+#navbar{
+    background: #f9f9f9;
+    height: 59px;
+    width: 100%;
+    position: fixed;
+    background-color: whitesmoke;
+    overflow: hidden;
+    z-index: 10;
+}
+/* #navbar{
+    background: #f9f9f9;
+} */
+#logo{
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #ffa500;
+}
+.navbar-toggler span{
+    color: #ffa500;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: white;
+}
+#navbar form button{
+    background: orange;
+    color: white;
+    border: none;
+}
+/* Navbar End */
+
+.whatsapp{
+    font-size: 30px;
+    position: fixed;
+    right: 39px;
+    bottom: 30px;
+    z-index: 10;
+}
+
+.phone{
+    font-size: 30px;
+    position: fixed;
+    right: 39px;
+    bottom: 100px;
+    z-index: 10;
+}
+
+.whatsapp i,
+.phone i{
+    font-size: 45px;
+}
+
+
+/* Home Section Start */
+.home{
+    width: 100%;
+    height: 73vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./images/bird-netting-top-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "Construction Saftey Nets";}
+    10%{content: "Residential Bird Netting";}
+    20%{content: "Balcony Bird Netting";}
+    30%{content: "Society Bird Netting";}
+    40%{content: "Bird Spikes";}
+    50%{content: "Anti Bird Netting";}
+    60%{content: "Glass Safety Nets";}
+    70%{content: "Children Safety Nets";}
+    80%{content: "Shade Nets";}
+    90%{content: "Industrial Bird Netting";}
+    100%{content: "Cat Safety Nets";}
+} 
+.home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content a:hover{
+    background: #ffa500;
+    color: white;
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+/* Home Section End */
+
+/* Section Book Start */
+.book{
+    background: #f9f9f9;
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+.book .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #ffa500;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.book .submit:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        padding: 20px;
+    }
+}
+/* Section Book End */
+
+
+
+
+
+/* Section Packages Start */
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span{
+    color: #ffa500;
+}
+.packages .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.packages .card img{
+    border-radius: 5px;
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.packages .card .card-body p{
+    font-size: 15px;
+}
+.checked{
+    color: #ffa500;
+}
+.star i{
+    font-size: 15px;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+.packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: #ffa500;
+    color: white;
+    border-radius: 5px;
+}
+/* Section Packages End */
+
+
+
+
+/* Section Services Start */
+.services{
+    background: #f9f9f9;
+    margin-top: 50px;
+}
+.services .card{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+}
+.services .card .card-body h3{
+    font-weight: 600;
+}
+.services .card .card-body{
+    text-align: center;
+}
+/* Section Services End */
+
+
+
+
+
+/* Section Gallary Start */
+.gallary{
+    margin-top: 50px;
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+    filter: blur(1.3px);
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    color: #ffa500;
+  }
+
+.changecontentC1::after{
+    content: ' ';
+    color: white;
+    text-shadow: 0px 1px 1px black;
+    animation: changetextC1 50s infinite linear;
+}
+@keyframes changetextC1{
+    0%{content: "AGALAMBE";} 
+    2%{content: "AGARKAR NAGAR";}
+    4%{content: "AKURDI";}
+    6%{content: "ALANDI";}
+    8%{content: "ALEPHATA";}
+    10%{content: "AMANORA PARK TOWN";}
+    12%{content: "AMBEGAON";}
+    14%{content: "AMBEGAON BUDRUK";}
+    16%{content: "AMBEGAON PATHAR";}
+    18%{content: "AMBOLI";}
+    20%{content: "ANAND NAGAR";}
+    22%{content: "ANE";}
+    24%{content: "ASHOK NAGAR";}
+    26%{content: "ASHOKA NAGAR";}
+    28%{content: "ASHTAPUR";}
+    30%{content: "ASKARWADI";}
+    32%{content: "AUNDH";}
+    34%{content: "AUNDH GAON";}
+    36%{content: "BAKORI";}
+    38%{content: "BALAJI NAGAR";}
+    40%{content: "BALEWADI";}
+    42%{content: "BANER";}
+    44%{content: "BANER GAON";}
+    46%{content: "BARAMATI";}
+    48%{content: "BAVDHAN";}
+    50%{content: "BAVDHAN KHURD";}
+    52%{content: "BAWADA";}
+    54%{content: "BHAGYASHREE NAGAR";}
+    56%{content: "BHAWANI PETH";}
+    58%{content: "BHEKRAI NAGAR";}
+    60%{content: "BHOR";}
+    62%{content: "BHOSALE NAGAR";}
+    64%{content: "BHOSARI";}
+    66%{content: "BHOSLENAGAR";}
+    68%{content: "BHUGAON";}
+    70%{content: "BHUKUM";}
+    72%{content: "BHUMKAR NAGAR";}
+    74%{content: "BHUSARI COLONY";}
+    76%{content: "BIBWEWADI";}
+    78%{content: "BOPE";}
+    80%{content: "BOPODI";}
+    81%{content: "BUDHWAR PETH";}
+    82%{content: "CHARHOLI KHURD";}
+    83%{content: "CHIKHALI";}
+    84%{content: "BUND GARDEN";}
+    85%{content: "CHIMBALI";}
+    86%{content: "CAMP";}
+    87%{content: "CHINCHWAD";}
+    88%{content: "CHAKAN";}
+    89%{content: "CHINCHWAD GAON";}
+    90%{content: "CHANDAN NAGAR";}
+    91%{content: "CHINTAMANI NAGAR";}
+    92%{content: "CHANDANI CHOWK";}
+    93%{content: "CHOURAINAGAR";}
+    94%{content: "CHANDE";}
+    95%{content: "CHOVISWADI";}
+    96%{content: "CHANDKHED";}
+    97%{content: "CLOVER PARK";}
+    98%{content: "CHARHOLI";}
+    100%{content: "CHARHOLI BUDRUK";}
+} 
+
+.changecontentC2::after{
+    content: ' ';
+    color: white;
+    text-shadow: 0px 1px 1px black;
+    animation: changetextC2 50s infinite linear;
+}
+@keyframes changetextC2{
+    0%{content: "DAHANUKAR COLONY";}
+    5%{content: "DANGE CHOWK";}
+    10%{content: "DAPODI";}
+    15%{content: "DAPOLI";}
+    20%{content: "DATTANAGAR";}
+    25%{content: "DATTAWADI";}
+    30%{content: "DAUND";}
+    35%{content: "DECCAN GYMKHANA";}
+    40%{content: "DEHU";}
+    45%{content: "DHANKAWADI";}
+    50%{content: "DHANORE";}
+    55%{content: "DHANORI";}
+    60%{content: "DHAYARI";}
+    65%{content: "DHAYARI PHATA";}
+    70%{content: "DIGHI";}
+    75%{content: "EON FREE ZONE";}
+    80%{content: "ERANDWANE";}
+    85%{content: "FATIMA NAGAR";}
+} 
+
+.changecontentC3::after{
+    content: ' ';
+    color: white;
+    text-shadow: 0px 1px 1px black;
+    animation: changetextC3 50s infinite linear;
+}
+@keyframes changetextC3{
+    0%{content: "GAHUNJE";}
+    5%{content: "GANESH NAGAR";}
+    10%{content: "GANESH PΕΤΗ";}
+    15%{content: "GANESHKHIND";}
+    20%{content: "GANGA DHAM";}
+    25%{content: "GHORPADE PETH";}
+    30%{content: "GHORPADI";}
+    35%{content: "GHORPURI";}
+    40%{content: "GHOTAWADE";}
+    45%{content: "GOKHALE NAGAR";}
+    50%{content: "GOKUL NAGAR";}
+    55%{content: "GULTEKDI";}
+    60%{content: "GURU NANAK NAGAR";}
+    65%{content: "GURUGANESH NAGAR";}
+    70%{content: "GURUWAR PETH";}
+    75%{content: "HADAPSAR";}
+    80%{content: "HADAPSAR GAON";}
+    85%{content: "HADAPSAR INDUSTRIAL ESTATE";}
+    90%{content: "HANDEWADI";}
+    95%{content: "HINGNE KHURD";}
+    100%{content: "HINJAWADI";}
+} 
+
+.changecontentC4::after{
+    content: ' ';
+    color: white;
+    text-shadow: 0px 1px 1px black;
+    animation: changetextC4 50s infinite linear;
+}
+@keyframes changetextC4{
+    0%{content: "JAMBHUL";} 
+    2%{content: "JEJURI";}
+    4%{content: "JUNNAR";}
+    6%{content: "KALAS";}
+    8%{content: "KALEWADI";}
+    10%{content: "KALYANI NAGAR";}
+    12%{content: "KALYANI NAGAR ANNEXE";}
+    14%{content: "KAMSHET";}
+    16%{content: "KANHE";}
+    18%{content: "KANHUR MESAI";}
+    20%{content: "KARJAT";}
+    22%{content: "KARVE NAGAR";}
+    24%{content: "KASARWADI";}
+    26%{content: "KASBA PETH";}
+    28%{content: "KASPATE VASTI";}
+    30%{content: "KESHAV NAGAR";}
+    32%{content: "KETKAWALE";}
+    34%{content: "KIRKATWADI";}
+    36%{content: "KHADAKWASLA";}
+    38%{content: "KIWALE";}
+    40%{content: "KOLHEWADI";}
+    42%{content: "KONDHWA BUDRUK";}
+    44%{content: "KHADKI";}
+    46%{content: "KONDANPUR";}
+    48%{content: "KATARKHADAK";}
+    50%{content: "KHAMUNDI";}
+    52%{content: "KONDHAPURI";}
+    54%{content: "KATRAJ";}
+    56%{content: "KAVADE MALA";}
+    58%{content: "KEDAGAON";}
+    60%{content: "KHARADI";}
+    62%{content: "KHED";}
+    64%{content: "KHED SHIVAPUR";}
+    66%{content: "KONDHAWE DHAWADE";}
+    68%{content: "KONDHWA KHURD";}
+    70%{content: "KOREGAON";}
+    72%{content: "KOREGAON PARK";}
+    74%{content: "KOTHRUD";}
+    76%{content: "KONDHWA";}
+    78%{content: "KUTWAL COLONY";}
+    80%{content: "LANDEWADI";}
+    81%{content: "LAVALE";}
+    82%{content: "LAVASA";}
+    83%{content: "LOHEGAON";}
+    84%{content: "LONAVALA";}
+    85%{content: "LONI KALBHOR";}
+    86%{content: "LONIKAND";}
+    87%{content: "LULLA NAGAR";}
+} 
+
+.changecontentC5::after{
+    content: ' ';
+    color: white;
+    text-shadow: 0px 1px 1px black;
+    animation: changetextC5 50s infinite linear;
+}
+@keyframes changetextC5{
+    0%{content: "MAAN";} 
+    2%{content: "MADHAV NAGAR";}
+    4%{content: "MAGARPATTA CITY";}
+    6%{content: "MAHALUNGE";}
+    8%{content: "MAMURDI";}
+    10%{content: "MANCHAR";}
+    12%{content: "MANDAI";}
+    14%{content: "MAVAL";}
+    16%{content: "MHADA COLONY";}
+    18%{content: "MOSHI PRADHIKARAN";}
+    20%{content: "MANGALWAR PETH";}
+    22%{content: "MODEL COLONY";}
+    24%{content: "MAHARSHI NAGAR";}
+    26%{content: "MAHATMA PHULE PETH";}
+    28%{content: "MALEGAON";}
+    30%{content: "MALKAPUR";}
+    32%{content: "MALWADI";}
+    34%{content: "MANIK BAUG";}
+    36%{content: "MANJRI";}
+    38%{content: "MARKAL";}
+    40%{content: "MARKET YARD";}
+    42%{content: "MARUNJI";}
+    44%{content: "MASULKAR COLONY";}
+    46%{content: "MOHAMMED WADI";}
+    48%{content: "MOHAN NAGAR";}
+    50%{content: "MOKARWADI";}
+    52%{content: "MUGAWADE";}
+    54%{content: "MUKUND NAGAR";}
+    56%{content: "MULSHI";}
+    58%{content: "MUNDHWA";}
+    60%{content: "NANA PETH";}
+    62%{content: "NANDED";}
+    64%{content: "NIBM ANNEXE";}
+    66%{content: "NIGDI";}
+    68%{content: "NILAKH";}
+    70%{content: "NARAYAN PETH";}
+    72%{content: "NARAYANGAON";}
+    74%{content: "NARHE";}
+    76%{content: "NASRAPUR";}
+    78%{content: "NORTH HADAPSAR";}
+    80%{content: "PACHANE";}
+    81%{content: "PADMAVATI";}
+    82%{content: "PADVI";}
+    83%{content: "PANCHGANI";}
+    84%{content: "PASHAN";}
+    85%{content: "PASURE";}
+    86%{content: "PATIL NAGAR";}
+    87%{content: "PAUD";}
+    88%{content: "PIMPRI";}
+    89%{content: "PIMPRI CHINCHWAD";}
+    90%{content: "MOLEDINA";}
+    91%{content: "MOSHI";}
+    92%{content: "MOSHI PHATA";}
+    93%{content: "NAVI PETH";}
+    94%{content: "NERE";}
+    95%{content: "NEW SANGVI";}
+    96%{content: "PANSHET";}
+    97%{content: "PARVATI";}
+    98%{content: "PIMPLE GURAV";}
+    100%{content: "PUNE CANTONMENT";}
+} 
+
+.changecontentC6::after{
+    content: ' ';
+    color: white;
+    text-shadow: 0px 1px 1px black;
+    animation: changetextC6 50s infinite linear;
+}
+@keyframes changetextC6{
+    0%{content: "RAHATANI";} 
+    2%{content: "RAJGURUNAGAR";}
+    4%{content: "RAM NAGAR";}
+    6%{content: "RAMBAUG COLONY";}
+    8%{content: "RAMTEKDI";}
+    10%{content: "RANGE HILL ESTATE";}
+    12%{content: "RANJANGAON";}
+    14%{content: "RASTA PETH";}
+    16%{content: "RAVET";}
+    18%{content: "RAVIWAR PEΤΗ";}
+    20%{content: "REVENUE COLONY";}
+    22%{content: "SADASHIV PETH";}
+    24%{content: "SADHU VASWANI CHOWK";}
+    26%{content: "SAMBHAJI NAGAR";}
+    28%{content: "SAYKARWADI";}
+    30%{content: "SANASWADI";}
+    32%{content: "SANEWADI";}
+    34%{content: "SAHAKAR NAGAR";}
+    36%{content: "SAINATH NAGAR";}
+    38%{content: "SAKORE NAGAR";}
+    40%{content: "SALISBURY PARK";}
+    42%{content: "SAROLA";}
+    44%{content: "SAYYED NAGAR";}
+    46%{content: "SHALIMAR CHOWK";}
+    48%{content: "SANGAMVADI";}
+    50%{content: "SHIKRAPUR";}
+    52%{content: "SHINDE VASTI";}
+    54%{content: "SHIRGAON";}
+    56%{content: "SHIRUR";}
+    58%{content: "SANGVI";}
+    60%{content: "SANJAY PARK";}
+    62%{content: "SHANIWAR PETH";}
+    64%{content: "SHANKAR KALAT NAGAR";}
+    66%{content: "SASANE NAGAR";}
+    68%{content: "SHASTRI NAGAR";}
+    70%{content: "SALUNKHE VIHAR";}
+    72%{content: "SASWAD";}
+    74%{content: "SATAV NAGAR";}
+    76%{content: "SHEWALWADI";}
+    78%{content: "SHETPHAL HAVELI";}
+    80%{content: "SHREEHANS NAGAR";}
+    81%{content: "SHUKRAWAR PETH";}
+    82%{content: "SHIRWAL";}
+    83%{content: "SHIVAJI NAGAR";}
+    84%{content: "SHIVANE";}
+    85%{content: "SHIVAPUR";}
+    86%{content: "SOMWAR PEΤΗ";}
+    87%{content: "SOPAN BAUG";}
+    88%{content: "SUKH SAGAR NAGAR";}
+    89%{content: "SUPE";}
+    90%{content: "SUS";}
+    91%{content: "SWARGATE";}
+    92%{content: "SIDDARTHA NAGAR";}
+    93%{content: "SINHAGAD";}
+    94%{content: "SOLAPUR";}
+    95%{content: "SOMATANE";}
+} 
+
+.changecontentC7::after{
+    content: ' ';
+    color: white;
+    text-shadow: 0px 1px 1px black;
+    animation: changetextC6 50s infinite linear;
+}
+@keyframes changetextC7{
+    0%{content: "TALAWADE";} 
+    2%{content: "TALEGAON";}
+    4%{content: "TALEGAON DABHADE";}
+    6%{content: "TALEGAON DHAMDHERE";}
+    8%{content: "TALJAI";}
+    10%{content: "TALWADE";}
+    12%{content: "TATHAWADE";}
+    14%{content: "THERGAON";}
+    16%{content: "THEUR";}
+    18%{content: "TINGRE NAGAR";}
+    20%{content: "TUKARAM NAGAR";}
+    22%{content: "TULAJA BHAWANI NAGAR";}
+    24%{content: "TULAPUR";}
+    26%{content: "TUNGARLI";}
+    28%{content: "UDAY BAUG";}
+    30%{content: "UNDRI";}
+    32%{content: "URAVADEI";}
+    34%{content: "URSE";}
+    36%{content: "URULI";}
+    38%{content: "URULI DEVACHI";}
+    40%{content: "URULI KANCHAN";}
+    42%{content: "UTTAM NAGAR";}
+    44%{content: "VADGAON";}
+    46%{content: "VADGAON BUDRUK";}
+    48%{content: "VADGAON SHERI";}
+    50%{content: "VANAZ";}
+    52%{content: "VARASGAON";}
+    54%{content: "VARVE KHURD";}
+    56%{content: "VEERBHADRA NAGAR";}
+    58%{content: "VELHE";}
+    60%{content: "VELU";}
+    62%{content: "VETAL NAGAR";}
+    64%{content: "VIDYANAGAR";}
+    66%{content: "VIMAN NAGAR";}
+    68%{content: "VISHAL NAGAR";}
+    70%{content: "VISHNU DEV NAGAR";}
+    72%{content: "VISHRANTWADI";}
+    74%{content: "VITHALWADI";}
+    76%{content: "WADAKI";}
+    78%{content: "WADEGAON";}
+    80%{content: "WAGHOLI";}
+    81%{content: "WAI";}
+    82%{content: "WAKAD";}
+    83%{content: "WAKADEWADI";}
+    84%{content: "WALHE";}
+    85%{content: "WALVEKAR NAGAR";}
+    86%{content: "WANOWRIE";}
+    87%{content: "WANWADI";}
+    88%{content: "WARJE";}
+    89%{content: "WIRELESS COLONY";}
+    90%{content: "YASHWANT NAGAR";}
+    91%{content: "YAVAT";}
+    92%{content: "YERWADA";}
+    93%{content: "YEWALEWADI";}
+} 
+
+
+/* Section Gallary End */
+
+
+
+
+/* About Start */
+.about{
+    padding: 50px;
+    margin-top: 50px;
+    background: #f9f9f9;
+}
+.about .card{
+    border-radius: 10px;
+}
+.about .card img{
+    border-radius: 10px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p{
+    font-weight: 500;
+}
+#about-btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #ffa500;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .about{
+        padding: 0;
+    }
+}
+/* About End */
+
+
+
+
+/* Footer Start */
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #f9f9f9;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: #ffa500;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #ffa500;
+}
+
+.space{
+    height: 30px;
+    width: 100%;
+}
+/* Footer End */
